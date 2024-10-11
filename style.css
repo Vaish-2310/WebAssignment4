@@ -1,0 +1,269 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0dfd5; /* Light Beige */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #004d61; /* Dark Teal */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header .signup-button {
+    background-color: #ff6f61; /* Coral Orange */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #90bbcf; /* Sky Blue */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Add some spacing between the boxes */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #a08d8d; /* Coral Orange */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e5534b; /* Darker shade for hover effect */
+}
+
+/* Welcome Banner Styling */
+.welcome-banner {
+    background-color: #007B82; /* Darker tone of Sky Blue */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.welcome-banner h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.welcome-banner p {
+    font-size: 18px;
+}
+
+/* Book Listing Styling */
+.book-listing {
+    display: flex;
+    justify-content: space-around; /* Evenly space the articles */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Space between books */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Article Styling */
+article {
+    background-color: #ffe6e6; /* Light pink background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 45%; /* Set width to 45% to make two books fit side by side */
+    box-sizing: border-box;
+}
+
+/* Book Image Styling */
+article img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+article button {
+    background-color: #ff6f61; /* Coral Orange */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+article button:hover {
+    background-color: #e5534b; /* Darker Coral Orange on hover */
+}
+
+/* Main Content Styling */
+.main-content {
+    background-color: #d2cfc4;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.main-content h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.image-gallery img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Latest News Styling */
+.latest-news {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: left;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.latest-news h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.latest-news ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.latest-news li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #E1E1E1;
+    color: #003B46;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 10px; /* Added for spacing */
+}
+
+/* Image Credits Styling */
+.image-credits {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    font-size: 14px; /* Smaller font for credits */
+    color: #333;
+    text-align: center;
+}
+
+.image-credits li {
+    margin-bottom: 5px; /* Space between each credit */
+}
+
+.image-credits a {
+    text-decoration: none; /* Remove underline */
+    color: #004d61; /* Dark Teal color for consistency */
+}
+
+.image-credits a:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-listing {
+        flex-direction: column; /* Stack the articles on smaller screens */
+        align-items: center;
+    }
+
+    article {
+        width: 80%; /* Adjust width for smaller screens */
+        margin: 0 auto; /* Center the articles */
+    }
+
+    .latest-news {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .signup-button {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+    }
+
+    .image-credits {
+        font-size: 12px; /* Slightly smaller font for mobile devices */
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 15px; /* More spacing between footer sections */
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
